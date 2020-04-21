@@ -2,16 +2,19 @@ import React from 'react';
 
 const Pokemon = (props) => {
     return (
-        <li className="pokemons___container">
-            <img src={props.image} alt={props.name} />
-            <h1>{props.name}</h1>
-            <ul>{props.types.map((singleType, index) =>
-                <li key={index}>
+        <div className="poke__container">
+            <div className="image__container">
+                <img src={props.image} alt={props.name} />
+            </div>
+
+            <h1 className="pokemon--name">{props.name}</h1>
+            <ul className="pokemon__container--type">{props.types.map((singleType, index) =>
+                <li className="pokemon--type" key={index}>
                     {singleType}
                 </li>)}
             </ul>
 
-        </li>
+        </div>
     )
 }
 export default Pokemon;
