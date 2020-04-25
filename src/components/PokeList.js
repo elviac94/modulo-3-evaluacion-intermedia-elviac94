@@ -1,5 +1,6 @@
 import React from 'react';
 import Pokemon from './Pokemon';
+import PropTypes from 'prop-types';
 
 const PokeList = (props) => {
     return (
@@ -14,5 +15,13 @@ const PokeList = (props) => {
             )}
         </ul>
     )
+};
+
+PokeList.propTypes = {
+    dataList: PropTypes.array,
+    image: PropTypes.string,
+    name: PropTypes.string,
+    types: PropTypes.array,
 }
+
 export default PokeList;

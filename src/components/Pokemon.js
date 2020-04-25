@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const Pokemon = (props) => {
     return (
@@ -17,4 +18,12 @@ const Pokemon = (props) => {
         </div>
     )
 }
+
+Pokemon.propTypes = {
+    image: PropTypes.string,
+    name: PropTypes.string,
+    types: PropTypes.array,
+}
+
+
 export default Pokemon;

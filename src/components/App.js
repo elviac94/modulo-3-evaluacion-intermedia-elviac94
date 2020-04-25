@@ -6,7 +6,7 @@ import PokeList from './PokeList';
 class App extends React.Component {
   constructor(props) {
     super(props);
-    this.state = (pokemon)
+    this.state = {pokemon}
 
 
   }
@@ -15,11 +15,10 @@ class App extends React.Component {
     return (
       <div className="App">
         <h1 className="page__title">Mi lista de Pokemons</h1>
-        <PokeList dataList={this.state} />
+        <PokeList dataList={this.state.pokemon} />
       </div>
     );
   }
 }
-
 
 export default App;

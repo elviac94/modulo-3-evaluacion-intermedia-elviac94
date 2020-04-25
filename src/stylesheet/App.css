@@ -1,36 +1,32 @@
 .App {
   text-align: center;
-  
 }
 ul li {
   list-style: none;
-
 }
 
-
-.pokelist__container{
+.pokelist__container {
   width: 90%;
   padding: 10px;
   display: flex;
   align-items: baseline;
   flex-wrap: wrap;
   justify-content: center;
-  
 }
-.pokemons___container{
+.pokemons___container {
   border-radius: 8px;
   border: solid black 1px;
   margin: 10px;
   width: 13%;
-  background-color: #F2FCFF;
+  background-color: #f2fcff;
 }
-.poke__container{
- width: 100%;
- display: flex;
- flex-direction: column;
- height: 200px;
+.poke__container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 200px;
 }
-.pokemon--name{
+.pokemon--name {
   margin: 0px;
   border-top: solid black 1px;
   border-bottom: solid black 1px;
@@ -38,7 +34,7 @@ ul li {
   text-transform: capitalize;
 }
 
-.pokemon__container--type{
+.pokemon__container--type {
   width: 100%;
   height: 100%;
   display: flex;
@@ -47,7 +43,7 @@ ul li {
   padding: 0px;
 }
 
-.pokemon--type{
+.pokemon--type {
   display: block;
   margin: 5px;
   width: 50px;
